@@ -60,3 +60,8 @@ jobs:
           app-name: 'AgenteConversacional'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_31759d3d32684324b02b808666d116e2 }}
+          
+          
+          
+      - name: 'run'
+        run: streamlit run iris_model.py
